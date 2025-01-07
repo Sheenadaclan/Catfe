@@ -1,0 +1,21 @@
+﻿/* =======================================================
+   1. General Reset and Global Styling
+======================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS';
+}
+
+::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+body {
+    background-image: url('pictures/drink4.jpg');
+    background-color: #f0d7b7;
+    color: #5e0404;
+    transition: filter 0.3s ease;
+    -ms-overflow-style: none; /* Hides scrollbar for IE */
+}

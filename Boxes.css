@@ -1,0 +1,115 @@
+﻿/* =======================================================
+   6. About Section
+======================================================= */
+.about {
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center; /* Centers the container vertically (if necessary) */
+    padding: 20px;
+    position: relative; /* Ensures it stays in its intended position */
+}
+
+.about-box {
+    width: 800px;
+    padding: 20px;
+    background-color: #9b5e2f;
+    border: 2px solid #5e0404;
+    border-radius: 15px;
+    color: wheat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between items */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better visibility */
+}
+
+.about-item {
+    text-align: center; /* Center-align text under the icon */
+}
+
+    .about-item img {
+        width: 50px; /* Adjust the size of the icon */
+        height: 50px;
+    }
+
+
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.blog {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-box, .blog1-box, .blog2-box {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    background-color: #9b5e2f;
+    border: 2px solid #5e0404;
+    border-radius: 15px;
+    color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog-content, .blog1-content, .blog2-content {
+    flex: 1 1 60%;
+    text-align: left;
+}
+
+.blog-image, .blog1-image, .blog2-image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+    .blog-image img, .blog1-image img, .blog2-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+.blog-box h2, .blog1-box h2, .blog2-box h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.blog-box p, .blog1-box p, .blog2-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+    .content {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-size-adjust: 50%;
+}
+
+.box-box {
+    width: 900px;
+    height: 450px;
+    background-color: #9b5e2f;
+    border: 2px solid #5e0404;
+    border-radius: 15px;
+    color: wheat;
+}

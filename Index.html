@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catfe</title>
+    <link rel="stylesheet" href="CSS.css" />
+    <link rel="icon" type="image/png" href="pictures/FL.png" />
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <span>Type in your email account</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button type="button">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Log In</h1>
+                <span>Use your email account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button type="button">Log In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your personal details to order at our cafe!</p>
+                <button class="hidden" id="login">Log In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Hello Friend!</h1>
+                <p>Register your details to order on our website!</p>
+                <button class="hidden" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <img id="popup-gif" src="" alt="Response GIF" class="popup-image" />
+            <p id="popup-message" class="popup-message">This is your alert message!</p>
+            <button id="close-popup" class="popup-button">OK</button>
+        </div>
+    </div>
+    <script src="Js.js"></script>
+</body>
+</html>

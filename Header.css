@@ -1,0 +1,78 @@
+﻿/* =======================================================
+   2. Header Styling
+======================================================= */
+/* Sticky Header with Hide-on-Scroll */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8b5e3b;
+    padding: 10px 30px;
+    border-bottom: 4px solid #5e0404;
+    z-index: 1000;
+    transform: translateY(0); /* Visible initially */
+    transition: transform 0.3s ease; /* Smooth slide effect */
+}
+
+
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+    .logo img {
+        width: 80px;
+        height: 50px;
+    }
+
+.cafe-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f9d29d;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+            nav ul li a.active,
+            nav ul li a:hover {
+                color: #fff;
+            }
+
+.logout-button {
+    background-color: #5e0404;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .logout-button:hover {
+        background-color: #9b0000;
+    }
