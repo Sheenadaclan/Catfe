@@ -1,0 +1,107 @@
+﻿/* =======================================================
+   3. Main Content and Layout
+======================================================= */
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(100vh - 80px);
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    margin: 20px auto;
+    max-width: 1200px; /* Ensures the content is not stretched across the full width */
+}
+
+.welcome-text {
+    flex: 1.5; /* Give the text more space */
+    color: wheat;
+    text-align: left;
+    padding: 20px;
+    line-height: 1.6; /* Improved readability */
+}
+
+    .welcome-text h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .welcome-text p {
+        font-size: 1.2rem;
+    }
+
+.welcome-image {
+    flex: 1;
+    text-align: center; /* Center the image */
+}
+
+    .welcome-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px; /* Slightly rounded corners for the image */
+        transform: scale(1);
+        transition: transform 0.3s ease; /* Add a hover effect */
+    }
+
+        .welcome-image img:hover {
+            transform: scale(1.1); /* Slight zoom-in effect */
+        }
+
+
+/* Drinks Section */
+.drinks {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.drink-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.drink-box {
+    width: 200px;
+    height: 250px;
+    background-color: #9b5e2f;
+    border: 2px solid #5e0404;
+    border-radius: 30px;
+    color: wheat;
+}
+
+    .drink-box img {
+        max-width: 80%;
+        height: 50%;
+        margin: 3px;
+        border-radius: 10px;
+    }
+
+.add-to-cart {
+    margin: 5px;
+    background-color: #800000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .add-to-cart:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 5px 5px #f9d29d;
+    }

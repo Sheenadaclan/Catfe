@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Catfe!</title>
+    <link rel="icon" type="image/png" href="pictures/FL.png" />
+    <link rel="stylesheet" href="CSS1.css" />
+    <link rel="stylesheet" href="Header.css" />
+    <link rel="stylesheet" href="Layout.css" />
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="Boxes.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="pictures/Logo2.png" alt="Cafe Logo" />
+            <span class="cafe-name">Catfe Creation</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#drinks">MENU</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <button id="logout-button" class="logout-button">Log out</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="content">
+            <div class="box-box">
+                <div class="welcome-section">
+                    <div class="welcome-text">
+                        <h1 style=" color: white; justify-content: center; text-align: center;">Welcome to Catfe Creation!</h1>
+                        <p>
+                            Where coffee, creativity, and cats come together. Enjoy delicious handcrafted drinks and foods, and the company of our adorable feline friends. Personalize your experience by drawing your own designs on your coffee cup—because every visit should be uniquely yours.
+
+                            Stop by to relax, sip, and create unforgettable moments.
+                        </p>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="pictures/HomeLog.png" alt="A cozy coffee cup welcoming you to Catfe">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Drinks Section -->
+    <section id="drinks" class="drinks">
+        <div class="drink-container">
+            <div class="drink-box">
+                <img src="pictures/D1.png" alt="Drink 1">
+                <h4>
+                    Iced Crunch Oatmilk Latte
+                </h4>
+                <button class="add-to-cart" data-drink-id="1">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/D2.png" alt="Drink 2">
+                <h4>
+                    Brown Butter Maple Cookie Latte
+                </h4>
+                <button class="add-to-cart" data-drink-id="2">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/D3.png" alt="Drink 3">
+                <h4>
+                    Latte Macchiato
+                </h4>
+                <button class="add-to-cart" data-drink-id="3">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/D4.png" alt="Drink 4">
+                <h4>
+                    Marshmallow Cappuccino Coffee
+                </h4>
+                <button class="add-to-cart" data-drink-id="4">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/D5.png" alt="Drink 5">
+                <h4>
+                    Pumpkin Spice Latte
+                </h4>
+                <button class="add-to-cart" data-drink-id="5">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/D6.png" alt="Drink 6">
+                <h4>
+                    Vanilla Latte
+                </h4>
+                <button class="add-to-cart" data-drink-id="6">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F1.png" alt="Drink 7">
+                <h4>
+                    Blueberry Cupcake
+                </h4>
+                <button class="add-to-cart" data-drink-id="7">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F2.png" alt="Drink 8">
+                <h4>
+                    Strawberry Whipped Cream Cupcake
+                </h4>
+                <button class="add-to-cart" data-drink-id="8">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F3.png" alt="Drink 9">
+                <h4>
+                    Chhocolate Eclair
+                </h4>
+                <button class="add-to-cart" data-drink-id="9">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F4.png" alt="Drink 10">
+                <h4>
+                    Grilled Chicken Sandwich
+                </h4>
+                <button class="add-to-cart" data-drink-id="10">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F5.png" alt="Drink 11">
+                <h4>
+                    Cinnamon Rolls
+                </h4>
+                <button class="add-to-cart" data-drink-id="11">Add to Cart</button>
+            </div>
+            <div class="drink-box">
+                <img src="pictures/F6.png" alt="Drink 12">
+                <h4>
+                    Seasoned Waffle Fries
+                </h4>
+                <button class="add-to-cart" data-drink-id="12">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart-popup" class="cart-popup hidden">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: PhP 0.00</p>
+            <div class="cart-popup-footer">
+                <button id="checkout">Checkout</button>
+                <button id="close-cart">Close</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="blog-box">
+            <div class="blog-content">
+                <h2>Welcome to the Catfe Creation Blog!</h2>
+                <p>
+                    Our blog is the place to get a behind-the-scenes look at our café, discover exciting updates, and engage with the latest coffee trends and feline fun. Whether you’re here for café news, creative inspiration, or just to learn more about the art of coffee and cats, we’ve got something special for you!
+                </p>
+            </div>
+            <div class="blog-image">
+                <img src="pictures/B1.png" alt="Cats and Coffee">
+            </div>
+        </div>
+    </section>
+
+    <section id="blog1" class="blog">
+        <div class="blog1-box">
+            <div class="blog1-image">
+                <img src="pictures/B2.png" alt="Coffee Cup Art">
+            </div>
+            <div class="blog1-content">
+                <h2>"How Drawing on Your Coffee Cup Makes Your Visit Extra Special"</h2>
+                <p>
+                    At <b>Catfe Creation</b>, we’re all about creativity! In this post, we explore the joy of drawing on your coffee cup. Learn how you can personalize your coffee experience with your favorite designs, whether you’re inspired by our furry friends or just feel like expressing your creativity. Discover why this simple act makes your café visit memorable!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog2" class="blog">
+        <div class="blog2-box">
+            <div class="blog2-content">
+                <h2>"The Purrfect Companion: Meet the Cats at Catfe Creation"</h2>
+                <p>
+                    Get to know the lovable cats that call our café home! In this post, we share their adoption stories, personalities, and how each cat contributes to the unique vibe of our café. Plus, find out how you can meet these furry friends and perhaps even bring one home!
+                </p>
+            </div>
+            <div class="blog2-image">
+                <img src="pictures/B3.jpg" alt="Cats at Catfe Creation">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-box">
+            <div class="about-item">
+                <img src="pictures/AB1.png" alt="Instagram">
+                <p>_CatfeCreation08</p>
+            </div>
+            <div class="about-item">
+                <img src="pictures/AB2.png" alt="Twitter">
+                <p>_Catfe_Creation08</p>
+            </div>
+            <div class="about-item">
+                <img src="pictures/AB3.png" alt="Facebook">
+                <p>Catfe Creation</p>
+            </div>
+            <div class="about-item">
+                <img src="pictures/AB4.png" alt="Email">
+                <p>catfecreation08@gmail.com</p>
+            </div>
+            <div class="about-item">
+                <img src="pictures/AB5.png" alt="Contact">
+                <p>011-0820-2417</p>
+            </div>
+            <div class="about-item">
+                <img src="pictures/AB6.png" alt="Location">
+                <p>Cebu Rawr St.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div id="logout-popup" class="custom-popup hidden">
+        <div class="popup-content">
+            <img src="pictures/Failed3.gif" alt="Logging out" class="popup-gif" />
+            <h3>Confirm Logout</h3>
+            <p>Are you sure you want to log out?</p>
+            <div class="popup-buttons">
+                <button id="logout-confirm" class="popup-button confirm">Yes, Logout</button>
+                <button id="logout-cancel" class="popup-button cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="hidden"></div>
+
+    <!-- Thank You Popup -->
+    <div id="thank-you-popup" class="popup hidden">
+        <img src="pictures/thank-you.gif" alt="Thank You" class="popup-gif" />
+        <p>Thank you for your purchase!</p>
+        <button id="thank-you-ok">OK</button>
+    </div>
+
+    <div id="cart-overlay" class="hidden"></div>
+
+    <script src="Js1.js"></script>
+
+</body>
+</html>

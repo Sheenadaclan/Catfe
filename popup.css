@@ -1,0 +1,122 @@
+﻿/* =======================================================
+   4. Popups and Modals
+======================================================= */
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 3px solid #5e0404;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 20px;
+}
+
+    .custom-popup.hidden {
+        display: none;
+    }
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-gif {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.popup-button {
+    background-color: #8b5e3b;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+    .popup-button:hover {
+        background-color: #5e0404;
+    }
+
+
+/* =======================================================
+   7. Cart Popup
+======================================================= */
+.cart-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+    .cart-popup.hidden {
+        display: none;
+    }
+
+    .cart-popup ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+.cart-popup-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#checkout, #close-cart {
+    background-color: #8b5e3b;
+    color: white;
+    border: thick;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    #checkout:hover, #close-cart:hover {
+        background-color: #5e0404;
+    }
+
+
+
+/* Popup Styling */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    background: white; /* Popup background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; /* Initially hidden */
+}
+
